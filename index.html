@@ -2,259 +2,324 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/grid.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="/assets/css/grid.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/responsive.css">
-    <link rel="icon" href="/assets/css/img/kumoko4_auto_x2.jpg" type="image/gif" sizes="16x16">
-    <title>Band-Ber</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>My InFo</title>
 </head>
 <body>
-    <div id="main">
-        <div id="header">
-            <!-- begin : nav -->
-            <ul class="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#band">Band</a></li>
-                <li><a href="#tour">Tuor</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#">More
-                    <i class="fa-sharp fa-solid fa-caret-down"></i>
-                </a>
-                    <ul class="subnav">
-                        <li><a href="#">Merchandise</a></li>
-                        <li><a href="#">Extras</a></li>
-                        <li><a href="#">Media</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <!-- end : nav -->
-            <!-- begin : search -->
-            <div class="search-btn">
-                <i class="search-icon fa-sharp fa-solid fa-magnifying-glass"></i>
-            </div>
-            <!-- end : search -->
-            <div id = "mobile-menu" class="mobile-menu-btn">
-                <i class="menu-icon fa-solid fa-bars"></i>
-            </div>
-            
-
-        </div>
-        <div id="slider">
-            <div class="text-content">
-                <h2 class="text-heading">Chicago</h2>
-                <div class="text-description">Thank you, Chicago - A night we won't forget.</div>
-            </div>
-        </div>
-        <div id="content">
-            <!-- About-section -->
-            <div id="band" class="content-section">
-                <h2 class="section-heading">THE BAND</h2>
-                <p class="section-sub-heading">We love music</p>
-                <p class="text-about">
-                    We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <div class="row members-list">
-                    <div class="col col-third s-col-full mt-16 mt-8 mt-12 text-center">
-                        <p class="member-name">Name</p>
-                        <img src="/assets/css/img/band/bandmember.jpg" alt="Name" class="member-img">
-                    </div>
-                    <div class="col col-third s-col-full mt-16 mt-8 mt-12 text-center">
-                        <p class="member-name">Name</p>
-                        <img src="/assets/css/img/band/bandmember.jpg" alt="Name" class="member-img">
-                    </div>
-                    <div class="col col-third s-col-full mt-16 mt-8 mt-12 text-center">
-                        <p class="member-name">Name</p>
-                        <img src="/assets/css/img/band/bandmember.jpg" alt="Name" class="member-img">
-                    </div>
-                    <div class="clear"></div>
-                </div>
-            </div>
-
-            <!-- Tour-section -->
-            <div id="tour" class="tour-section">
-                <div class="content-section">
-                    <h2 class="section-heading text-white">TOUR DATES</h2>
-                    <p class="section-sub-heading text-white">Remember to book your tickets!</p>
-                    <ul class="ticket-list">
-                        <li>September <span class="sold-out">Sold Out</span></li>
-                        <li>October  <span class="sold-out">Sold Out</span></li>
-                        <li>November <span class="quantity">3</span></li>
-                    </ul>
-                    <!-- places -->
-                    <div class="row places-list">
-                        <div class="col s-col-full mt-16 col-third">
-                            <img src="/assets/css/img/tour/newyork.jpg" alt="" class="place-img">
-                            <div class="place-body">
-                                <h3 class="place-heading">New York</h3>
-                                <p class="place-time">Fri 27 Nov 2016</p>
-                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button href="#" class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+    <div class="main">
+        <marquee onmouseover="this.stop()" onmouseout="this.start()" behavior="" direction="">Chào mừng đến với Web Site của tôi | Ngày tạo: 21/09/2023 
+        </marquee>
+        <div class="grid wide">
+            <!-- header -->
+            <div class="header col l-12 m-12 c-12">
+                <div class="row">
+                    <div class="header__left col l-6 m-12 c-12 ">
+                        <div class="row">
+                            <div class="header__left-img col l-4 m-4 c-12">
+                                <img src="./assets/img/avatar.jpg" alt="">
                             </div>
-                        </div>
-
-                        <div class="col s-col-full mt-16 col-third">
-                            <img src="/assets/css/img/tour/paris.jpg" alt="" class="place-img">
-                            <div class="place-body">
-                                <h3 class="place-heading">Paris</h3>
-                                <p class="place-time">Sat 28 Nov 2016</p>
-                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button href="#" class="place-buy-btn js-buy-ticket">Buy Tickets</button>
-                            </div>
-                        </div>
-                        <div class="col s-col-full mt-16 col-third">
-                            <img src="/assets/css/img/tour/sanfran.jpg" alt="" class="place-img">
-                            <div class="place-body">
-                                <h3 class="place-heading">San Francisco</h3>
-                                <p class="place-time">Sun 29 Nov 2016</p>
-                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button href="#" class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                            <div class="header__left-info col l-8 m-8 c-12">
+                                <h3 class="header__left-h3">
+                                    Nguyễn Trọng Tài
+                                </h3>
+                                <div class="header__left-desc">
+                                    Một mét 10 thằng WIBU
+                                </div>
+                                <div class="header__left-icon">
+                                    <a href="" target="_blank">
+                                        <i class="header__left-fb fa-brands fa-facebook"></i>
+                                    </a>
+                                    <a href="" target="_blank">
+                                        <i class="header__left-ig fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a href="" target="_blank">
+                                        <i class="header__left-git fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="" target="_blank">
+                                        <i class="header__left-dis fa-brands fa-discord"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="clear"></div>
-                </div>
-            </div>
-            <!-- Contact-section -->
-            <div id="contact" class="content-section">
-                <h2 class="section-heading">CONTACT</h2>
-                <p class="section-sub-heading">Fan? Drop a note!</p>   
-                <div class="contact-section">
-                <div class="row contact-content">
-                    <div class="col s-col-full col-half mt-12 contact-info">
-                        <p><i class="contact-icon fa-solid fa-location-dot"></i>VietNam, VN</p>
-                        <p><i class="contact-icon fa-solid fa-phone"></i>Phone: <a href="tel:+84 826726045">+84 826726045 </a></p>
-                        <p><i class="contact-icon fa-solid fa-envelope"></i>Email: <a href="mailto:ttai132002@gmail.com">ttai132002@gmail.com </a></p>
-                    </div>
- 
-                    <div class="col s-col-full col-half contact-form">
-                        <form action="">
-                            <div class="row">
-                                <div class="col col-half s-col-full mt-12 ">
-                                    <input type="text" name="" placeholder="Name" required id="" class="form-control">
+                    <div class="header__right col l-6 m-12 c-12">
+                        <div class="row">
+                            <div class="header__right-info col l-6 m-6 c-12 ">
+                                <div class="header__right-info-top">
+                                    <div class="header__right-header">
+                                        Email
+                                    </div>
+                                    <div class="header__right-text">
+                                        ttai132002@gmail.com
+                                    </div>
                                 </div>
-                                <div class="col col-half s-col-full mt-12">
-                                    <input type="text" name="" placeholder="Email" required id="" class="form-control">
+                                <div class="header__right-info-bottom">
+                                    <div class="header__right-header">
+                                        ngày sinh
+                                    </div>
+                                    <div class="header__right-text">
+                                        01/03/2002
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row mt-8">
-                                <div class="col col-full">
-                                    <input type="text" name="" placeholder="Message" required id="" class="form-control">
+                            <div class="header__right-info col l-6 m-6 c-12">
+                                <div class="header__right-info-top">
+                                    <div class="header__right-header">
+                                        số điện thoại
+                                    </div>
+                                    <div class="header__right-text">
+                                        082***6045
+                                    </div>
+                                </div>
+                                <div class="header__right-info-bottom">
+                                    <div class="header__right-header">
+                                        quê quán
+                                    </div>
+                                    <div class="header__right-text">
+                                        Hồng Lĩnh - Hà Tĩnh
+                                    </div>
                                 </div>
                             </div>
-                            <input class="form-submit mt-16 s-col-full" type="submit" value="SEND">
-                        </form>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <!-- container -->
+            <div class="container col l-12 m-12 c-12">
+                <div class="row">
+                    <div class="container__nav-all col l-2 m-12 c-12">
+                        <div class="container__nav">
+                            <div class="container__nav-list">
+                                <div class="container__nav-item active">
+                                    <a class="container__nav-link" href="#info">
+                                        <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+                                            <lord-icon src="https://cdn.lordicon.com/nobciafz.json" trigger="morph" style="width:70px;height:70px">
+                                            </lord-icon>
+                                        <p class="container__nav-text">Bản Thân</p>
+                                    </a>
+                                </div>
+                                <div class="container__nav-item">
+                                    <a class="container__nav-link" href="#result">
+                                        <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+                                            <lord-icon src="https://cdn.lordicon.com/wxnxiano.json" trigger="morph" style="width:70px;height:70px">
+                                            </lord-icon>
+                                        <p class="container__nav-text">Kết Quả</p>
+                                    </a>
+                                    
+                                </div>
+                                <div class="container__nav-item">
+                                    <a class="container__nav-link" href="#target">
+                                        <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+                                            <lord-icon src="https://cdn.lordicon.com/iltqorsz.json" trigger="morph" style="width:70px;height:70px">
+                                            </lord-icon>
+                                        <p class="container__nav-text">Mục Tiêu</p>
+                                    </a>
+                                    
+                                </div>
+                                <div class="container__nav-item">
+                                    <a class="container__nav-link" href="#enjoin">
+                                        <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+                                            <lord-icon src="https://cdn.lordicon.com/rjzlnunf.json" trigger="morph" style="width:70px;height:70px">
+                                            </lord-icon>
+                                        <p class="container__nav-text">Sở Thích</p>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__content-all col l-10 m-12 c-12">
+                        <div id="#info" class="container__content active">
+                            <div class="container__content-info">
+                                <h3 class="container__content-header">
+                                    Giới thiệu !
+                                </h3>
+                                <div class="container__content-desc">
+                                    Tự học qua internet , mọi kiến thức đều được tiếp thu chắt lọc.
+                                </div>
+                                <div class="container__content-title">
+                                    Một số câu nói ảnh hưởng đến thới giới quan mình
+                                </div>
+                               
+                                    <div class="slide__container">
+                                        <i class="slide-left fa-solid fa-angle-left"></i>
+                                        <i class="slide-right fa-solid fa-angle-right"></i>
+                                        <ul class="slide-dot">
+                                            <li class="slide-dot-item"></li>
+                                            <li class="slide-dot-item active"></li>
+                                            <li class="slide-dot-item"></li>
+                                            <li class="slide-dot-item"></li>
+                                            <li class="slide-dot-item"></li>
+                                        </ul>
+        
+                                        <div class="slide-main">
+                                            
+                                            <div class="slide-img">
+                                                <img src="https://duchl02.github.io/assets/img/ton-tu.jpeg" alt="">
+                                            </div>
+                                            <div class="slide-content">
+                                                <h1>Tôn Tử</h1>
+                                            <p>Tiên hạ thủ vi cường, hậu thủ vi tai ương</p>
+                                            </div>
+                                        </div>
+                                        <div class="slide-main active">
+                                            <div class="slide-img">
+                                                <img src="https://duchl02.github.io/assets/img/tien-bip.jpeg" alt="">
+                                            </div>
+                                            <div class="slide-content">
+                                                <h1>Tiến Bịp</h1>
+                                            <p>Tiên trách kỷ, hậu vẫn là trách kỷ</p>
+                                            </div>
+                                        </div>
+                                        <div class="slide-main">
+                                            <div class="slide-img">
+                                                <img src="https://duchl02.github.io/assets/img/ngan-ngu-hay.jpeg" alt="">
+                                            </div>
+                                            <div class="slide-content">
+                                                <h1>Khuyết Danh</h1>
+                                            <p>Đến việc nhỏ bạn làm còn không tốt sao người ta tin bạn có thể làm được việc lớn.</p>
+                                            </div>
+                                        </div>
+                                        <div class="slide-main">
+                                            <div class="slide-img">
+                                                <img src="https://duchl02.github.io/assets/img/the-godfather-1-1375687021-500-2676-4881-1631806006.jpeg" alt="">
+                                            </div>
+                                            <div class="slide-content">
+                                                <h1>The Godfather</h1>
+                                            <p>Sức khỏe tốt là điều quan trọng nhất, hơn cả thành công, hơn cả tiền bạc, hơn cả quyền lực.</p>
+                                            </div>
+                                        </div>
+                                        <div class="slide-main">
+                                            <div class="slide-img">
+                                                <img src="https://duchl02.github.io/assets/img/jvevermind.jpeg" alt="">
+                                            </div>
+                                            <div class="slide-content">
+                                                <h1>Jvevermind</h1>
+                                            <p>Công bằng là giấc mơ của kẻ yếu, người tỉnh táo nhất chính là kẻ mạnh nhất, kẻ mạnh nhất chính là người thành công nhất</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                        <div id="#result" class="container__content">
+                            <div class="container__content-product">
+                                <h3 class="container__content-product-header">
+                                    Một số projecet của tôi !
+                                </h3>
+                                <div class="container__content-product-list">
+                                        <div class="container__content-product-item">
+                                            <div class="row">
+                                                <div class="container__content-product-img col l-6 m-6 c-12">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- end : contact-section -->
-            <!-- begin : map-section -->
-            <div class="map-section">
-                <img src="/assets/css/img/footer/map.jpg" alt="Map">
-            </div>
-            <!-- end : map-section -->
-
-        </div>
-        <div id="footer">
-            <div class="socials-list">
-                <a href=""><i class="icon-footer fa-brands fa-facebook"></i></a>
-                <a href=""><i class="icon-footer fa-brands fa-instagram"></i></a>
-                <a href=""><i class="icon-footer fa-brands fa-youtube"></i></a>
-                <a href=""><i class="icon-footer fa-brands fa-tiktok"></i></a>
-                <a href=""><i class="icon-footer fa-brands fa-twitter"></i></a>
-                <a href=""><i class="icon-footer fa-brands fa-pinterest"></i></a>
-            </div>
-            <p class="copyright">Powered by<a href="">W3.css</a></p>
-        </div>
-        <div class="modal js-modal">
-            <div class="modal-container js-modal-container">
-                <div class="modal-close js-modal-close">
-                    <i class="fa-solid fa-xmark"></i>
-                </div>
-                <header class="modal-header">
-                    <i class="modal-icon-shop fa-solid fa-bag-shopping"></i>
-                    Tickets
-                </header>
-                <div class="modal-body">
-                    <label for="ticket-quantity" class="modal-label">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        Tickets, $15 per person
-                    </label>
-                    <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many ?">
-
-                    <label for="ticket-email" class="modal-label">
-                        <i class="fa-solid fa-user"></i>
-                        Send To
-                    </label>
-                    <input id="ticket-email" type="email" class="modal-input" placeholder="Enter email">
-                    <button class="modal-pay"> PAY <i class="modal-icon-pay fa-solid fa-check"></i> </button>
-                </div>
-                <footer class="modal-footer">
-                    <p class="modal-help">Need<a href="">help ?</a></p>
-                </footer>
-            </div>
-
         </div>
     </div>
-    <script>
-        var header = document.getElementById('header');
-        var mobileMenu = document.getElementById('mobile-menu');
-        var headerHeight = header.clientHeight;
-        // dong mo menu
-        mobileMenu.onclick = function() {
-            // console.log(header.clientHeight);
-            var isClosed = header.clientHeight === headerHeight;
-            if (isClosed) {
-                header.style.height = 'auto';
-            }
-            else {
-                header.style.height = null;
-            }
+    <!-- <script>
 
-        }
-        // //  tự động đóng khi chon menu
-         var menuItems = document.querySelectorAll('.nav li a[href*="#"]');
-        // console.log(menuItems)
-        for (var i = 0; i < menuItems.length; i++) {
-            var menuItem = menuItems[i];
-            // console.log(menuItem)
-            menuItem.onclick = function(event) {
-                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav')
-                if (isParentMenu) {
-                    event.preventDefault();
-                } else  {
-                    header.style.height = null;
-                }
+        const $ = document.querySelector.bind(document)
+        const $$ = document.querySelectorAll.bind(document)
+    
+        const items = $$('container__nav-item')
+        const contents = $$('.container__content')
+    
+        // CONTAINER-ITEM
+        items.forEach(function(item,index) {
+            item.onclick = function(){
+                const content = contents[index]
+                // tabActive()
+                $('.container__content.active').classList.remove('active')
+                $('container__nav-item.active').classList.remove('active')
+    
+                item.classList.add('active')
+                content.classList.add('active')
             }
-        }
-    </script>
-    <script>
-        const buyBtns = document.querySelectorAll('.js-buy-ticket')
-        const modal = document.querySelector('.js-modal')
-        const modalContainer = document.querySelector('.modal-container')
-        const modalClose = document.querySelector('.js-modal-close')
-        // hàm hiển thị modal mua vé (thêm class modal vào modal)
-        function showBuyTickets() {
-            modal.classList.add('open')
-        }
-        // ẩn modal 
-        function hideBuyTickets() {
-            modal.classList.remove('open')
-        }
-        // lặp qua từng thẻ và nghe hàng vi click
-        for (const buyBtn of buyBtns) { 
-            buyBtn.addEventListener('click', showBuyTickets)
-        }
-        // nghe hành vi click
-        modalClose.addEventListener('click', hideBuyTickets)
-        modal.addEventListener('click', hideBuyTickets)
-        modalContainer.addEventListener('click', function (event){
-            event.stopPropagation()
-
         })
-    </script>
+        function tabActive(){
+            document.documentElement.scrollTop= 100 + 'px'
+        }
+        // DOT-SLIDE
+        const dots=$$('.slide-dot-item')
+        const slides=$$('.slide-main')
+        const numberOfSilides = slides.length
+        var slideNumber = 0
+        var slideIndex = 0
+        dots.forEach(function(dot,index){
+            dot.onclick = function(){
+                const slide = slides[index]
+                $('.slide-main.active').classList.remove('active')
+                $('.slide-dot-item.active').classList.remove('active')
+                dot.classList.add('active')
+                slide.classList.add('active')
+            }
+        })
+        // AUTO SLIDE
+        function autoSlide(){
+            setInterval(function(){
+                dots.forEach(function(dot){
+                dot.classList.remove('active')
+                })
+                slides.forEach(function(slide){
+                slide.classList.remove('active')
+                })
+                slideNumber ++
+                
+                if (slideNumber > dots.length-1){
+                    slideNumber =0;
+                }
+                dots[slideNumber].classList.add('active')
+                slides[slideNumber].classList.add('active')
+            },5000)
+        }
+        autoSlide()
+        // NEXT SLIDE
+        const backBtn = $('.slide-left')
+        const nextBtn = $('.slide-right')
+        
+        nextBtn.addEventListener('click', function(){
+            dots.forEach(function(dot){
+                dot.classList.remove('active')
+                })
+                slides.forEach(function(slide){
+                slide.classList.remove('active')
+                })
+                slideNumber ++
+                
+                if (slideNumber > dots.length-1){
+                    slideNumber =0;
+                }
+                dots[slideNumber].classList.add('active')
+                slides[slideNumber].classList.add('active')
+        })
+        // BACK SLIDE
+        backBtn.addEventListener('click', function(){
+            dots.forEach(function(dot){
+                dot.classList.remove('active')
+                })
+                slides.forEach(function(slide){
+                slide.classList.remove('active')
+                })
+                slideNumber --
+    
+                if(slideNumber<0){
+                    slideNumber = dots.length -1
+                }
+                dots[slideNumber].classList.add('active')
+                slides[slideNumber].classList.add('active')
+        })
+    </script>  -->
 </body>
 </html>
