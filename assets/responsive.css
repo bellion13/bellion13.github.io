@@ -36,4 +36,11 @@
         flex-direction: column;
         align-items: center;
     }
+    .enjoin__item {
+        flex-direction: column;
+    }
+    .enjoin__text {
+        margin: 10px 0;
+        text-align: center;
+    }
 }
