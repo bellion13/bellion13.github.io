@@ -9,6 +9,9 @@ html {
 ol, ul {
     list-style: none;
 }
+.pad-20 {
+    padding: 0 20px !important;
+}
 .main {
     background: linear-gradient(45deg, #ee7752, #fb5f9a, #23a6d5, #23d5ab);
     background-size: 400% 400%;
@@ -190,7 +193,7 @@ ol, ul {
 
 .container__content.active {
     display: block;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 .container__content-header {
     font-size: 30px;
@@ -288,10 +291,95 @@ ol, ul {
     text-align: center;
 
 }
+.container__content-product-title {
+
+}
 .container__content-product-list {
     
 }
 .container__content-product-item {
+    margin-top: 40px; 
+
+}
+.container__content-product-link {
+    position: relative;
+    overflow: hidden;
+
+}
+.container__content-product-link:hover .container__content-product-img-hover {
+    top: 0;
+}
+.container__content-product-img {
     
 }
+.container__content-product-img img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+}
+.container__content-product-img-hover a {
+    text-decoration: none;
+    font-weight: 550;
+}
+.container__content-product-img-hover {
+    position: absolute;
+    /* top: -100%; */
+    bottom: -100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s ease;
+    border-radius: 20px;
+}
+.container__content-product-text-hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00ff73;
+    font-size: 18px;
+}
+.container__content-product-source-code a {
+    color: #F60488;
+    text-decoration: underline;
+    font-size: 19px;
+    margin-top: 10px;
 
+}
+.container__content-product-item p {
+    font-size: 20px;
+    font-weight: 550;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* target */
+.container__content-target {
+
+}
+.target__header {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.target__title {
+    font-size: 20px;
+    border-left: 3px solid blue;
+    padding-left: 10px;
+}
+.target__datetime {
+    font-size: 18px;
+    padding-left: 13px;
+    color: rgb(121, 112, 112);
+}
+.target__desc {
+    font-size: 18px;
+    border-left: 3px solid blue;
+    padding-left: 10px;
+}
+
+/*  */
