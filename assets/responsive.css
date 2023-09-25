@@ -31,7 +31,7 @@
         text-align: center;
     }
     .header__left-icon a {
-        margin: 7px;
+        margin: 10px;
     }
     .slide-main {
         flex-direction: column;
