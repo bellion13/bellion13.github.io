@@ -317,7 +317,7 @@ ul {
     width: 120px;
     height: 80px;
     border-radius: 20px;
-    margin: 0 20px;
+    margin-right: 20px;
 }
 
 .slide-content {
@@ -431,6 +431,7 @@ ul {
     font-size: 18px;
     border-left: 3px solid blue;
     padding-left: 10px;
+    margin-bottom: 20px;
 }
 
 /* enjoin */
@@ -460,11 +461,11 @@ ul {
 }
 
 .enjoin__img {
-    min-width: 180px;
+    /* max-width: 100%; */
+    min-width: 233px;
     margin-right: 10px;
-    max-height: 100px;
+    max-height: 124px;
     object-fit: cover;
-    width: 100%;
     border-radius: 20px;
 }
 
