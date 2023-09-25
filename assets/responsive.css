@@ -21,7 +21,18 @@
 
 /* mobile  */
 @media (max-width: 739px)  {
-    
+    .main {
+        padding: 10px;
+    }
+    .header__left-h3 {
+        text-align: center;
+    }
+    .header__left-icon {
+        text-align: center;
+    }
+    .header__left-icon a {
+        margin: 10px;
+    }
     .slide-main {
         flex-direction: column;
         text-align: center;
@@ -65,6 +76,8 @@
         left: 0;
     }
     .container__nav-item {
+        background-color: white;
+
         width: 96px;
         height: 120px;
         display: flex;
