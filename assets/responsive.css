@@ -59,9 +59,12 @@
     .container__nav-list {
         z-index: 999;
         position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
     }
     .container__nav-item {
-        width: 86px;
+        width: 96px;
         height: 120px;
         display: flex;
         justify-content: center;
