@@ -1,0 +1,257 @@
+@import "__variables";
+@import "__reset";
+@import "__mixins";
+
+.header {
+    height: 80px;
+    line-height: 80px;
+    font-size: $font24px;
+    justify-content: space-between;
+    &__left {
+        &-logo {
+            font-family: $font;
+    letter-spacing: 4px;
+    padding: 0 16px;
+
+        }
+
+    }
+    &__right {
+        @include displayflex;
+        justify-content: space-between;
+        &-left {
+            font-family: $font;
+        }
+        &-right {
+            & i {
+                margin-left: 6px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.container {
+    &__left {
+        font-family: $fontroboto;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        &-nav {
+            width: 100%;
+            padding: 64px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            &-link {
+                width: 100%;
+                display: block;
+                color: $gray-color;
+                text-decoration: none;
+                padding: 8px 16px;
+                &:hover {
+                    color: $black-color;
+                    background-color: $gary-hover;
+                }
+            }
+        }
+        &-link {
+            text-decoration: none;
+            color: $black-color;
+            padding: 8px 16px;
+            width: 100%;
+            &:hover {
+                background-color: $gary-hover;
+            }
+        }
+    }
+    &__right {
+        &-top {
+            position: relative;
+            &-img {
+                & img {
+                    width: 100%;
+                }
+            }
+            &-header {
+                padding: 24px 28px;
+                top: 0;
+                position: absolute;
+                color: $white-color;
+                &-title {
+                    font-weight: 400;
+                    font-size: 64px;
+                    margin: 10px 0;
+                }
+                &-desc {
+                    font-size: 36px;
+                    margin: 10px 0;
+                    font-weight: 400;
+
+                }
+                & p {
+                    margin: 15px 0;
+                    font-size: 18px;
+                    & a {
+                        color: $white-color;
+                        padding: 12px 24px;
+                        text-decoration: none;
+                        background-color: $black-color;
+                        &:hover {
+                            color: $black-color;
+                            background-color: $gray-color;
+                        }
+                    }
+                }
+            }
+        }
+        &-mid {
+            &-header {
+                margin: 15px 0;
+                font-size: 15px;
+                color: $gray-color;
+            }
+            &-product {
+                &-img {
+                    & img {
+                        width: 100%;
+                    }
+                }
+                &-title {
+                    margin-top: 15px;
+                    color: $gray-color;
+                }
+                &-price {
+                    margin-top: 8px;
+                    margin-bottom: 15px;
+                    font-weight: bold;
+                }
+            }
+        }
+        &-bottom {
+            padding: 32px 16px;
+            background-color: $black-color;
+            color: $white-color;
+            &-h1 {
+                font-size: 36px;
+                margin: 10px 0;
+            }
+            &-desc {
+                font-size: 15px;
+                margin: 15px 0;
+            }
+            &-input {
+                & input {
+                    padding: 8px;
+                    width: 100%;
+                }
+            }
+            &-buttom {
+                font-size: 15px;
+                padding: 8px 16px;
+                margin-top: 16px;
+                background-color: $red-color;
+                color: $white-color;
+                border: none;
+                cursor: pointer;
+                &:hover {
+                    color: $black-color;
+                    background-color: $gray-back-color;
+                }
+            }
+        }
+    }
+}
+.footer {
+    background-color: $gray-back-color;
+    
+    &__top {
+        padding: 64px 0;
+        font-size: 12px;
+        &-item {
+            &-h4 {
+                text-align: center;
+                margin: 10px 0;
+                font-size: 20px;
+            }
+            &-desc {
+                text-align: center;
+                margin: 12px 0;
+            }
+            &-input {
+                margin-left: 16px;
+                & input {
+                    margin: 6px 0;
+                    border: 1px solid $gray-back-color;
+                    padding: 8px;
+                    width: 100%;
+                }
+            }
+            &-button {
+                margin-top: 6px;
+                border: none;
+                cursor: pointer;
+                margin-left: 16px;
+                width: 95%;
+                padding: 8px 16px;
+                color: $white-color;
+                background-color: $black-color;
+                &:hover {
+                    color: $black-color;
+                    background-color: $gary-hover;
+                }
+            }
+            &-link {
+                text-align: center;
+                & a {
+                    color: $black-color;
+                    display: block;
+                    margin: 12px 0;
+                }
+            }
+            &-h4end {
+                margin: 10px 0;
+                font-size: 20px;
+
+                & p {
+                    margin: 12px 0;
+                    font-size: 12px;
+                    & i {
+                        margin-right: 3px;
+                        text-align: center;
+                    }
+                }
+
+                &-icon {
+                    font-size: 18px;
+                    margin-top: 20px;
+                }
+            }
+            &-icon {
+                & p {
+                    margin: 12px 0;
+                    font-size: 12px;
+                     & i {
+                        margin-right: 3px;
+                        text-align: center;
+                     }
+                }
+            }
+        }
+    }
+    &__bottom {
+        background-color: $black-color;
+        padding: 24px 0;
+        text-align: center;
+        color: $white-color;
+        font-size: 15px;
+        &-text {
+            & a {
+                color: $white-color;
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}

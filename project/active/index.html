@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>Active</title>
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="nav">
+                <div class="nav__list">
+                    <div class="nav__item active">
+                        <a href="#home" class="nav__link">
+                            Home
+                        </a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="#about" class="nav__link">
+                            About
+                        </a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="#team" class="nav__link">
+                            Team
+                        </a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div id="#home" class="container__content active">
+                Home
+            </div>
+            <div id="#about" class="container__content">
+                About
+            </div>
+            <div id="#team" class="container__content">
+                Team
+            </div>
+            <div id="#contact" class="container__content">
+                Contact
+            </div>
+        </div>
+    </div>
+    <script>
+        const $ = document.querySelector.bind(document)
+        const $$ = document.querySelectorAll.bind(document)
+    
+        const items = $$('.nav__item')
+        const contents = $$('.container__content')
+    
+        // CONTAINER-ITEM
+        items.forEach(function(item,index) {
+            item.onclick = function(){
+                const content = contents[index]
+                // tabActive()
+                $('.container__content.active').classList.remove('active')
+                $('.nav__item.active').classList.remove('active')
+    
+                item.classList.add('active')
+                content.classList.add('active')
+            }
+        })
+        function tabActive(){
+            document.documentElement.scrollTop= 100 + 'px'
+        }
+    </script>
+</body>
+</html>

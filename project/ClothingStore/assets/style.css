@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  height: 80px;
+  line-height: 80px;
+  font-size: 24px;
+  justify-content: space-between;
+}
+.header__left-logo {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 4px;
+  padding: 0 16px;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.header__right-left {
+  font-family: "Montserrat", sans-serif;
+}
+.header__right-right i {
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.container__left {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container__left-nav {
+  width: 100%;
+  padding: 64px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container__left-nav-link {
+  width: 100%;
+  display: block;
+  color: rgb(117, 117, 117);
+  text-decoration: none;
+  padding: 8px 16px;
+}
+.container__left-nav-link:hover {
+  color: black;
+  background-color: #ccc;
+}
+.container__left-link {
+  text-decoration: none;
+  color: black;
+  padding: 8px 16px;
+  width: 100%;
+}
+.container__left-link:hover {
+  background-color: #ccc;
+}
+.container__right-top {
+  position: relative;
+}
+.container__right-top-img img {
+  width: 100%;
+}
+.container__right-top-header {
+  padding: 24px 28px;
+  top: 0;
+  position: absolute;
+  color: white;
+}
+.container__right-top-header-title {
+  font-weight: 400;
+  font-size: 64px;
+  margin: 10px 0;
+}
+.container__right-top-header-desc {
+  font-size: 36px;
+  margin: 10px 0;
+  font-weight: 400;
+}
+.container__right-top-header p {
+  margin: 15px 0;
+  font-size: 18px;
+}
+.container__right-top-header p a {
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  background-color: black;
+}
+.container__right-top-header p a:hover {
+  color: black;
+  background-color: rgb(117, 117, 117);
+}
+.container__right-mid-header {
+  margin: 15px 0;
+  font-size: 15px;
+  color: rgb(117, 117, 117);
+}
+.container__right-mid-product-img img {
+  width: 100%;
+}
+.container__right-mid-product-title {
+  margin-top: 15px;
+  color: rgb(117, 117, 117);
+}
+.container__right-mid-product-price {
+  margin-top: 8px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.container__right-bottom {
+  padding: 32px 16px;
+  background-color: black;
+  color: white;
+}
+.container__right-bottom-h1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+.container__right-bottom-desc {
+  font-size: 15px;
+  margin: 15px 0;
+}
+.container__right-bottom-input input {
+  padding: 8px;
+  width: 100%;
+}
+.container__right-bottom-buttom {
+  font-size: 15px;
+  padding: 8px 16px;
+  margin-top: 16px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.container__right-bottom-buttom:hover {
+  color: black;
+  background-color: #F1F1F1;
+}
+
+.footer {
+  background-color: #F1F1F1;
+}
+.footer__top {
+  padding: 64px 0;
+  font-size: 12px;
+}
+.footer__top-item-h4 {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 20px;
+}
+.footer__top-item-desc {
+  text-align: center;
+  margin: 12px 0;
+}
+.footer__top-item-input {
+  margin-left: 16px;
+}
+.footer__top-item-input input {
+  margin: 6px 0;
+  border: 1px solid #F1F1F1;
+  padding: 8px;
+  width: 100%;
+}
+.footer__top-item-button {
+  margin-top: 6px;
+  border: none;
+  cursor: pointer;
+  margin-left: 16px;
+  width: 95%;
+  padding: 8px 16px;
+  color: white;
+  background-color: black;
+}
+.footer__top-item-button:hover {
+  color: black;
+  background-color: #ccc;
+}
+.footer__top-item-link {
+  text-align: center;
+}
+.footer__top-item-link a {
+  color: black;
+  display: block;
+  margin: 12px 0;
+}
+.footer__top-item-h4end {
+  margin: 10px 0;
+  font-size: 20px;
+}
+.footer__top-item-h4end p {
+  margin: 12px 0;
+  font-size: 12px;
+}
+.footer__top-item-h4end p i {
+  margin-right: 3px;
+  text-align: center;
+}
+.footer__top-item-h4end-icon {
+  font-size: 18px;
+  margin-top: 20px;
+}
+.footer__top-item-icon p {
+  margin: 12px 0;
+  font-size: 12px;
+}
+.footer__top-item-icon p i {
+  margin-right: 3px;
+  text-align: center;
+}
+.footer__bottom {
+  background-color: black;
+  padding: 24px 0;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+}
+.footer__bottom-text a {
+  color: white;
+}
+.footer__bottom-text a:hover {
+  opacity: 0.6;
+}
+
+/*# sourceMappingURL=style.css.map */
