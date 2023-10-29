@@ -1,0 +1,478 @@
+@import "_varibles";
+@import "_global";
+.main {
+    position: relative;
+}
+.header {
+    margin-bottom: 80px;
+    height: 80px;
+    background-color: $white-color;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo {
+        font-weight: 700;
+        cursor: pointer;
+    }
+    &__nav {
+        &-list {
+            display: flex;
+            gap: 0 40px;
+        }
+        &-item {
+        }
+        &-link {
+            color: $text-color;
+        }
+    }
+    &__logout {
+        display: flex;
+        align-items: center;
+        gap: 0 30px;
+        font-weight: 550;
+        cursor: pointer;
+    }
+    &__longin {
+        color: $text-heading-color;
+    }
+    &__singup {
+        color: $primary-color;
+        border: 1px solid $primary-color;
+        border-radius: 50px;
+        padding: 10px 24px;
+    }
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 80px;
+    &__content {
+        width: 555px;
+        &-h1 {
+            font-size: 50px;
+            font-weight: 700;
+            color: $text-heading-color;
+            padding-bottom: 20px;
+        }
+        &-desc {
+            font-size: 16px;
+            color: $text-color;
+            padding-bottom: 50px;
+        }
+        &-buttom {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: $white-color;
+            width: 150px;
+            height: 50px;
+            flex-shrink: 0;
+            background-color: $primary-color;
+            border-radius: 10px;
+            font-weight: 550;
+            box-shadow: 0px 15px 20px $primary-color;
+            cursor: pointer;
+        }
+    }
+    &__img {
+        & img {
+            width: 100%;
+        }
+    }
+}
+.intro {
+    box-shadow: 0px 0px 20px $primary-color;
+    border-radius: 10px;
+    background-color: $white-color;
+    margin-bottom: 80px;
+
+    &__list {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 33%;
+        gap: 0 40px;
+        padding: 20px;
+    }
+    &__item:nth-child(2) {
+        border-left: 2px solid $gray-color;
+        border-right: 2px solid $gray-color;
+    }
+    &__img {
+        & img {
+            width: 100%;
+        }
+    }
+    &__text {
+    }
+    &__number {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    &__desc {
+        font-size: 20px;
+        color: $text-color;
+    }
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    background-color: $white-color;
+    &__img {
+        & img {
+            width: 100%;
+        }
+    }
+    &__text {
+        width: 440px;
+    }
+    &__heading {
+        font-size: 35px;
+        color: $text-heading-color;
+        font-weight: 700;
+    }
+    &__desc {
+        margin: 20px 0;
+        color: $text-color;
+    }
+    &__check {
+        color: $text-color;
+
+        &-list {
+        }
+        &-item {
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+        }
+        &-img {
+            & img {
+                width: 100%;
+            }
+        }
+        &-text {
+            margin-left: 5px;
+        }
+    }
+}
+
+.plan {
+    margin: 80px 0;
+    text-align: center;
+    &__heading {
+        font-size: 35px;
+        color: $text-heading-color;
+        margin-bottom: 20px;
+    }
+    &__desc {
+        font-size: 16px;
+        color: $text-color;
+        margin-bottom: 60px;
+    }
+    &__items {
+        // display: flex;
+
+        padding: 0 25px;
+    }
+    &__item {
+        border: 2px solid $gray-color;
+        border-radius: 10px;
+        height: 760px;
+        padding: 0 80px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__item:hover {
+        border: 2px solid $primary-color;
+    }
+    &__img {
+        & img {
+            margin-top: 80px;
+            width: 144.904px;
+            height: 165.374px;
+            flex-shrink: 0;
+        }
+    }
+    &__title {
+        padding: 30px 0;
+        font-size: 18px;
+        color: $text-heading-color;
+        font-weight: 600;
+    }
+    &__check {
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 10px;
+        }
+        &-img {
+            padding-right: 8px;
+        }
+        &-text {
+        }
+    }
+    &__price {
+        padding-bottom: 20px;
+        font-size: 25px;
+    }
+    &__button {
+        color: $primary-color;
+        padding: 10px 20px;
+        border: 1px solid $primary-color;
+        width: 150px;
+        margin: 0 auto;
+        border-radius: 50px;
+        font-weight: 550;
+        cursor: pointer;
+    }
+    &__button:hover {
+        background-color: $primary-color;
+        color: $white-color;
+    }
+    &__bottom {
+        margin-bottom: 50px;
+    }
+}
+
+.network {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    text-align: center;
+    &__header {
+        width: 383px;
+        font-size: 35px;
+        font-weight: 700;
+        color: $text-heading-color;
+        margin-bottom: 20px;
+    }
+    &__desc {
+        width: 555px;
+        font-size: 16px;
+        color: $text-color;
+        margin-bottom: 150px;
+    }
+    &__img {
+        & img {
+            width: 100%;
+        }
+    }
+    &partner {
+        & img {
+            width: 100%;
+        }
+    }
+}
+
+.customer {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 160px;
+    &__heading {
+        font-size: 35px;
+        font-weight: 700;
+        width: 450px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    &__desc {
+        width: 555px;
+        font-size: 16px;
+        color: $text-color;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    &__slider {
+        &-list {
+        }
+        &-items {
+            padding: 0 25px;
+        }
+        &-item {
+            cursor: pointer;
+            border: 2px solid $gray-color;
+            padding: 30px;
+            // width: 400px;
+            height: 230px;
+            flex-shrink: 0;
+            border-radius: 10px;
+        }
+        &-item:hover {
+            border: 2px solid $primary-color;
+        }
+        &-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-hero {
+            display: flex;
+            align-items: center;
+        }
+        &-img {
+            & img {
+                width: 100%;
+            }
+        }
+        &-title {
+            margin-left: 20px;
+        }
+        &-heading {
+            font-size: 18px;
+            color: $text-heading-color;
+        }
+        &-desc {
+            font-size: 14px;
+            color: $text-color;
+        }
+        &-star {
+            margin-left: 10px;
+            color: gold;
+        }
+        &-desc {
+            margin-top: 10px;
+            font-size: 16px;
+            color: $text-heading-color;
+        }
+    }
+    &__bottom {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 60px;
+    }
+    &__dots {
+        display: flex;
+        cursor: pointer;
+    }
+    &__dot {
+        padding: 6px;
+        background-color: $gray-color;
+        border-radius: 50px;
+        margin: 0 10px;
+    }
+    &__dot.active {
+        background-color: $primary-color;
+    }
+    &__backnext {
+    }
+    &__left,
+    &__right {
+        border: 3px solid $primary-color;
+        padding: 15px;
+        border-radius: 50px;
+        color: $primary-color;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    &__left:hover,
+    &__right:hover {
+        background-color: $primary-color;
+        color: $white-color;
+    }
+}
+.subscribe {
+    top: 87%;
+    background-color: $white-color;
+    padding: 60px 70px;
+    max-width: 1200px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 15px $primary-color;
+    z-index: 1;
+    border-radius: 10px;
+
+    &__text {
+    }
+    &__heading {
+        width: 370px;
+        font-size: 35px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    &__desc {
+        font-size: 16px;
+        color: $text-color;
+    }
+    &__button {
+        cursor: pointer;
+        color: $white-color;
+        font-weight: 550;
+        padding: 20px 60px;
+        background-color: $primary-color;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px $primary-color;
+    }
+}
+.footer {
+    padding-top: 180px;
+    background-color: $footer-back-color;
+    padding-bottom: 100px;
+    &__left {
+        padding-left: 30px;
+        &-img {
+        }
+        &-desc {
+            width: 340px;
+            font-size: 16px;
+            color: $text-color;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        &-info {
+        }
+        &-social {
+            padding: 12px;
+            background-color: $white-color;
+            border-radius: 50px;
+            color: $primary-color;
+            cursor: pointer;
+            box-shadow: 0px 11px 20px -6px #f53838;
+            margin-right: 6px;
+        }
+        &-copyright {
+            margin-top: 30px;
+            color: #afb5c0;
+        }
+    }
+    &__right {
+        &-h3 {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: $text-heading-color;
+            font-weight: 550;
+        }
+
+        &-link {
+            display: block;
+            color: $text-color;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    }
+}
